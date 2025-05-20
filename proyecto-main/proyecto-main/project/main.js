@@ -4,21 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSlide = 0;
   let slideInterval;
   
-  // al apretar view more saldran las noticias ocultas
-  const viewMoreBtn = document.querySelector('.view-more-btn');
-  const hiddenNews = document.querySelectorAll('.news-list .news-item.hidden');
-
-  viewMoreBtn.addEventListener('click', (e) => {
-    e.preventDefault(); // evitar comportamiento por defecto del enlace
-
-    hiddenNews.forEach(news => {
-      news.classList.remove('hidden'); // mostramos las noticias ocultas
-    });
-
-    // Opcional: ocultar el botón una vez mostradas las noticias
-    viewMoreBtn.style.display = 'none';
-  });
-
   const showSlide = (index) => {
     slides.forEach((slide, i) => {
       slide.classList.toggle('active', i === index);
@@ -68,12 +53,12 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
 
     // Diccionario de rutas según palabras clave falta hacerlo bien
     const rutas = {
-      "starfield": "/project/html/starfield.html",
-      "spiderman": "/project/noticias/spiderman2.html",
-      "spider-man": "/project/noticias/spiderman2.html",
-      "ghost of tsushima": "/project/noticias/ghost-pc.html",
-      "tsushima": "/project/noticias/ghost-pc.html",
-      "state of play": "/project/noticias/stateofplay.html"
+      "starfield": "starfield.html",
+      "spiderman": "spiderman2.html",
+      "spider-man": "spiderman2.html",
+      "ghost of tsushima": "ghost-pc.html",
+      "tsushima": "ghost-pc.html",
+      "state of play": "stateofplay.html"
     };
 
     if (rutas[query]) {
