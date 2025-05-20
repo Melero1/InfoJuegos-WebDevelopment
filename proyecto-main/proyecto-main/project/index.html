@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoJuegos Noticias</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon_recortado_64.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    
+    <div class="container header-container">
+      <div class="logo-container">
+        <a href="index.html" class="logo">
+          <span class="logo-8bit">Info</span><span class="logo-news">Juegos</span>
+        </a>
+      </div>
+
+      <nav>
+        <ul class="main-nav">
+          <li><a href="/project/index.html" class="active">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#">Categorías</a>
+            <ul class="dropdown-menu">
+              <li><a href="/project/html/playstation.html">PlayStation</a></li>
+              <li><a href="/project/html/xbox.html">Xbox</a></li>
+              <li><a href="/project/html/nintendo.html">Nintendo</a></li>
+              <li><a href="/project/html/pc.html">PC</a></li>
+              <li><a href="/project/html/mobile.html">Mobile</a></li>
+            </ul>
+          </li>
+          <li><a href="html/review.html">Reseñas</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="html/aboutme.html">Nosotros</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="search-container container">
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Buscar noticias, juegos, reseñas...">
+        <button type="submit" class="search-btn">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="featured-slider">
+      <div class="slides-container" id="slides-container">
+        <div class="slide active">
+          <div class="slide-img-container">
+            <img src="img/gta6.jpg" alt="PlayStation 6">
+            <div class="slide-category">Rumores</div>
+          </div>
+          <div class="slide-content">
+            <h2>Grand Theft Auto se retrasa hasta 2026, confirmado por rockstar games</h2>
+            <p>Rockstar se prepara para el impacto mediático que tendrá esta entrega </p>
+            <a href="/project/html/gta5Noticia.html" class="read-more-btn">Leer más</a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-img-container">
+            <img src="img/expedition33.jpg" alt="Xbox Game Pass">
+            <div class="slide-category">Noticias</div>
+          </div>
+          <div class="slide-content">
+            <h2>Xbox Game Pass añade 10 nuevos títulos este mes</h2>
+            <p>Microsoft continúa ampliando su biblioteca de juegos por suscripción.</p>
+            <a href="/project/html/gamePassNoticia.html" class="read-more-btn">Leer más</a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-img-container">
+            <img src="img/switch.jpg" alt="Nintendo Switch 2">
+            <div class="slide-category">Exclusivas</div>
+          </div>
+          <div class="slide-content">
+            <h2>Nintendo Switch 2: Todo lo que sabemos hasta ahora</h2>
+            <p>La nueva consola de Nintendo promete gráficos mejorados y compatibilidad con juegos actuales.</p>
+            <a href="#" class="read-more-btn">Leer más</a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-img-container">
+            <img src="img/schedule.jpg" alt="Pixel Art Games">
+            <div class="slide-category">Indie</div>
+          </div>
+          <div class="slide-content">
+            <h2>El juego indie desarrollado por una persona que ha superado todos los records de ventas</h2>
+            <p>Los desarrolladores independientes continúan explorando la estética retro con tecnología moderna.</p>
+            <a href="#" class="read-more-btn">Leer más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-arrow prev" id="prev-slide">&#10094;</button>
+        <div class="slider-dots" id="slider-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+        </div>
+        <button class="slider-arrow next" id="next-slide">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="featured-news container">
+      <h2 class="section-title">Noticias Destacadas</h2>
+
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="category-tag">Análisis</div>
+          <div class="news-img">
+            <img src="img/starfield.jpg" alt="Análisis de Starfield">
+          </div>
+          <div class="news-content">
+            <h3>Análisis de Starfield: La nueva era de Bethesda</h3>
+            <p>El esperado RPG espacial finalmente llega para redefinir el género.</p>
+            <div class="news-meta">
+              <span class="date">15 Mayo, 2025</span>
+              <div class="share-icons">
+                <a href="/project/html/starfield.html" class="read-more">Leer más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="category-tag">Listas</div>
+          <div class="news-img">
+            <img src="img/indies.jpg" alt="Mejores juegos indie">
+          </div>
+          <div class="news-content">
+            <h3>Los 10 mejores juegos indie de 2025 hasta ahora</h3>
+            <p>Una selección de las joyas independientes que no puedes perderte este año.</p>
+            <div class="news-meta">
+              <span class="date">10 Mayo, 2025</span>
+              <div class="share-icons">
+                <a href="/project/html/10mejoresIndie.html" class="read-more">Leer más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="category-tag">Avance</div>
+          <div class="news-img">
+            <img src="img/fc26.jpg" alt="FIFA 26">
+          </div>
+          <div class="news-content">
+            <h3>FIFA 26: Todas las novedades del nuevo simulador de fútbol</h3>
+            <p>EA Sports revoluciona la saga con un nuevo motor gráfico y mecánicas de juego.</p>
+            <div class="news-meta">
+              <span class="date">8 Mayo, 2025</span>
+              <div class="share-icons">
+                <a href="/project/html/fifaNoticia.html" class="read-more">Leer más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="latest-news container">
+      <h2 class="section-title">Últimas Noticias</h2>
+
+      <div class="news-list">
+        <article class="news-item">
+          <div class="news-item-img">
+            <img src="img/gta6mapa.jpg" alt="GTA 6">
+            <div class="category-pill">Rumores</div>
+          </div>
+          <div class="news-item-content">
+            <h3>GTA 6 podría incluir múltiples ciudades según dataminers</h3>
+            <p>Nuevos archivos descubiertos sugieren que el próximo título de Rockstar podría ambientarse en varias localizaciones.</p>
+            <div class="news-meta">
+              <span class="date">7 Mayo, 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-item-img">
+            <img src="img/fortnite.jpg" alt="Fortnite">
+            <div class="category-pill">Eventos</div>
+          </div>
+          <div class="news-item-content">
+            <h3>Fortnite anuncia colaboración con Marvel para su próxima temporada</h3>
+            <p>Epic Games prepara uno de los crossovers más ambiciosos de la historia del battle royale.</p>
+            <div class="news-meta">
+              <span class="date">6 Mayo, 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-item-img">
+            <img src="img/zelda.jpg" alt="Zelda">
+            <div class="category-pill">Lanzamientos</div>
+          </div>
+          <div class="news-item-content">
+            <h3>The Legend of Zelda: El próximo título llegará en 2026</h3>
+            <p>Nintendo confirma que el desarrollo del nuevo juego de la saga tardará más de lo esperado.</p>
+            <div class="news-meta">
+              <span class="date">5 Mayo, 2025</span>
+              <a href="#" class="read-more">Leer más →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="view-more-container">
+        <a href="#" class="view-more-btn">Ver más noticias</a>
+
+        <article class="news-item hidden">
+    <div class="news-item-img">
+      <img src="img/new1.jpg" alt="Nueva noticia 1">
+      <div class="category-pill">Actualidad</div>
+    </div>
+    <div class="news-item-content">
+      <h3>Noticia adicional 1</h3>
+      <p>Descripción corta de la noticia adicional 1.</p>
+      <div class="news-meta">
+        <span class="date">20 Mayo, 2025</span>
+        <a href="#" class="read-more">Leer más →</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="news-item hidden">
+    <div class="news-item-img">
+      <img src="img/new2.jpg" alt="Nueva noticia 2">
+      <div class="category-pill">Eventos</div>
+    </div>
+    <div class="news-item-content">
+      <h3>Noticia adicional 2</h3>
+      <p>Descripción corta de la noticia adicional 2.</p>
+      <div class="news-meta">
+        <span class="date">19 Mayo, 2025</span>
+        <a href="#" class="read-more">Leer más →</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="news-item hidden">
+    <div class="news-item-img">
+      <img src="img/new3.jpg" alt="Nueva noticia 3">
+      <div class="category-pill">Lanzamientos</div>
+    </div>
+    <div class="news-item-content">
+      <h3>Noticia adicional 3</h3>
+      <p>Descripción corta de la noticia adicional 3.</p>
+      <div class="news-meta">
+        <span class="date">18 Mayo, 2025</span>
+        <a href="#" class="read-more">Leer más →</a>
+      </div>
+    </div>
+  </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <a href="index.html" class="logo">
+          <span class="logo-8bit">Info</span><span class="logo-news">Juegos</span>
+        </a>
+        <p>Tu portal de noticias de videojuegos</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Categorías</h3>
+          <ul>
+            <li><a href="#">PlayStation</a></li>
+            <li><a href="#">Xbox</a></li>
+            <li><a href="#">Nintendo</a></li>
+            <li><a href="#">PC</a></li>
+            <li><a href="#">Mobile</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Secciones</h3>
+          <ul>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Análisis</a></li>
+            <li><a href="#">Guías</a></li>
+            <li><a href="#">Lanzamientos</a></li>
+            <li><a href="#">eSports</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Instagram</a>
+            <a href="#" class="social-icon">YouTube</a>
+            <a href="#" class="social-icon">Discord</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <p>&copy; 2025 8BitNews. Todos los derechos reservados.</p>
+        <ul class="footer-legal">
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
