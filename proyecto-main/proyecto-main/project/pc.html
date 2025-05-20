@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PC Gaming - Hardware y Tecnología</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/favicon_pc.png" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo-container">
+        <a href="index.html" class="logo">
+          <span class="logo-8bit">Info</span><span class="logo-news">PC</span>
+        </a>
+      </div>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="playstation.html">PlayStation 5</a></li>
+          <li><a href="xbox.html">Xbox</a></li>
+          <li><a href="nintendo.html">Nintendo</a></li>
+          <li><a href="pc.html" class="active">PC</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+          <li><a href="aboutme.html">Nosotros</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobile-menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <div class="search-container container">
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Buscar noticias, hardware, guías..." />
+        <button type="submit" class="search-btn">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="article-container">
+      <div class="article-header">
+        <h1 class="article-title">PC Gaming: Evolución imparable del hardware en 2025</h1>
+        <p class="article-meta">Publicado el 21 de mayo de 2025 · Por <strong>Redacción InfoPC</strong></p>
+      </div>
+
+      <figure class="article-image">
+        <img src="img/setupGaming1.jpg" alt="PC Gaming setup 2025" />
+        <figcaption>Configuraciones de PC de alto rendimiento dominan el mercado en 2025.</figcaption>
+      </figure>
+
+      <article class="article-content">
+        <p>El 2025 ha traído una nueva oleada de avances en el mundo del <strong>hardware para PC</strong>. Desde tarjetas gráficas que aprovechan inteligencia artificial en tiempo real hasta procesadores con arquitecturas revolucionarias, el gaming en ordenador vive su mejor momento.</p>
+
+        <h2>Novedades en tarjetas gráficas</h2>
+        <ul>
+          <li><strong>NVIDIA RTX 5090:</strong> rendimiento 3 veces superior a la 4090 en tareas de IA y ray tracing. Incluye DLSS 4 y renderizado neural.</li>
+          <li><strong>AMD Radeon RX 8900 XT:</strong> gran mejora en eficiencia energética y soporte completo para FSR 4.0.</li>
+        </ul>
+        <br>
+        <h2>Procesadores de nueva generación</h2>
+        <p>Intel ha lanzado la serie <strong>Core Ultra 9</strong> con núcleos dedicados a IA y consumo optimizado, mientras que AMD ha respondido con los nuevos <strong>Ryzen 9000X</strong> basados en Zen 5, ideales para creadores y gamers exigentes.</p>
+
+        <h2>Tecnologías destacadas</h2>
+        <ul>
+          <li><strong>PCIe 5.0:</strong> velocidades extremas para SSDs y GPUs.</li>
+          <li><strong>Memoria DDR5:</strong> ya estándar en la mayoría de setups modernos.</li>
+          <li><strong>Monitores OLED 360Hz:</strong> máxima fidelidad visual en eSports y juegos competitivos.</li>
+        </ul>
+      </article>
+
+      <div class="article-footer">
+        <a href="index.html" class="btn-back">← Volver a todas las noticias</a>
+      </div>
+    </section>
+
+    <h1 class="section-title">Últimas noticias de PC</h1>
+
+    <section class="news-grid">
+      <article class="news-card">
+        <img src="img/nvidia_rtx5090.jpg" alt="NVIDIA RTX 5090" class="news-image">
+        <div class="news-content">
+          <h2 class="news-title">NVIDIA RTX 5090: Análisis completo</h2>
+          <p class="news-summary">Te contamos todo sobre la nueva bestia gráfica de NVIDIA y cómo redefine el gaming y la IA generativa.</p>
+          <a href="noticias/rtx5090.html" class="read-more">Leer más</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="img/intel_ultra9.jpg" alt="Intel Ultra 9" class="news-image">
+        <div class="news-content">
+          <h2 class="news-title">Intel lanza la serie Core Ultra</h2>
+          <p class="news-summary">Procesadores híbridos con núcleos dedicados a IA y gaming de alto nivel. ¿Superan a los Ryzen?</p>
+          <a href="noticias/intel_ultra.html" class="read-more">Leer más</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="img/oled_monitor.jpg" alt="Monitor OLED 360Hz" class="news-image">
+        <div class="news-content">
+          <h2 class="news-title">Nuevos monitores OLED de 360Hz</h2>
+          <p class="news-summary">La tecnología OLED se consolida en el gaming competitivo con tiempos de respuesta mínimos y color perfecto.</p>
+          <a href="noticias/oled360.html" class="read-more">Leer más</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <a href="index.html" class="logo">
+          <span class="logo-8bit">Info</span><span class="logo-news">PC</span>
+        </a>
+        <p>Tu fuente confiable de hardware y tecnología para gamers</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Categorías</h3>
+          <ul>
+            <li><a href="pc.html">PC Gaming</a></li>
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Tarjetas gráficas</a></li>
+            <li><a href="#">Procesadores</a></li>
+            <li><a href="#">Periféricos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Secciones</h3>
+          <ul>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Comparativas</a></li>
+            <li><a href="#">Benchmarks</a></li>
+            <li><a href="#">Montajes</a></li>
+            <li><a href="#">Overclocking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-icons">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Twitch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <p>&copy; 2025 InfoPC. Todos los derechos reservados.</p>
+        <ul class="footer-legal">
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
