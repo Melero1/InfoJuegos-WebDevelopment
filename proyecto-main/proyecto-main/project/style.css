@@ -661,10 +661,6 @@ nav {
   font-size: 0.875rem;
 }
 
-.view-more-container {
-  text-align: center;
-  margin-top: var(--space-lg);
-}
 
 .view-more-btn {
   display: inline-block;
@@ -716,6 +712,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-md);
+  margin-left: 8rem;
 }
 
 @media (min-width: 768px) {
@@ -939,8 +936,4 @@ footer {
 
 .btn-back:hover {
   background-color: var(--accent-color-dark);
-}
-
-.hidden {
-  display: none;
 }
