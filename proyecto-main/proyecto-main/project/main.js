@@ -78,9 +78,18 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
       "playstation": "playstation.html",
       "reseñas": "reseñas.html",
       "mejores": "10mejoresIndie.html",
-      
-      
-      
+      "expedition": "expedition33.html",
+      "ghost of thushima": "ghostofthushima.html",
+      "metroid": "metroid.html",
+      "reseñas": "reseñas.html",
+      "reseña": "reseñas.html",
+      "schedule": "schedule1.html",
+      "starfield": "starfield.html",
+      "state of play": "stateofplay.html",
+      "switch": "switch2.html",
+      "xbox": "xbox.html",
+      "zelda": "zelda.html",
+      "fortnite": "fornite.html",
     };
 
     if (rutas[query]) {
