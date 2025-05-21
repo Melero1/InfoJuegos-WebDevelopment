@@ -70,6 +70,12 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
       "gamepass": "gamePassNoticia.html",
       "gamepass noticia": "gamePassNoticia.html",
       "gta 6": "gta5Noticia.html",
+      "expedition": "expedition33.html",
+      "movil": "mobile.html",
+      "mejores": "10mejoresIndie.html",
+      
+      
+      
     };
 
     if (rutas[query]) {
