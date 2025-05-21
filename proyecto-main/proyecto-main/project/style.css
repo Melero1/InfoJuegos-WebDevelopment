@@ -662,22 +662,6 @@ nav {
 }
 
 
-.view-more-btn {
-  display: inline-block;
-  padding: var(--space-xs) var(--space-md);
-  background-color: transparent;
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
-  border-radius: var(--border-radius-md);
-  font-weight: 600;
-  transition: background-color var(--transition-fast), color var(--transition-fast);
-}
-
-.view-more-btn:hover {
-  background-color: var(--color-primary);
-  color: white;
-}
-
 /* Footer */
 footer {
   background-color: var(--color-surface);
