@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reseñas de usuarios - InfoJuegos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/favicon_recortado_64.png" type="image/x-icon" />
+</head>
+<body>
+
+<header>
+  <div class="container header-container">
+    <div class="logo-container">
+      <a href="index.html" class="logo">
+        <span class="logo-8bit">Info</span><span class="logo-news">Juegos</span>
+      </a>
+    </div>
+
+    <nav>
+      <ul class="main-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#">Categorías</a>
+          <ul class="dropdown-menu">
+            <li><a href="playstation.html">PlayStation</a></li>
+            <li><a href="xbox.html">Xbox</a></li>
+            <li><a href="nintendo.html">Nintendo</a></li>
+            <li><a href="pc.html">PC</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+        </li>
+        <li><a href="review.html" class="active">Reseñas</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="aboutme.html">Nosotros</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="search-container container">
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Buscar reseñas por juego o usuario..." />
+      <button type="submit" class="search-btn">Buscar</button>
+    </form>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="section-title">Reseñas de jugadores</h1>
+
+  <section class="reviews-list">
+
+    <article class="review-card">
+      <header class="review-header">
+        <h2 class="review-game-title">Clair Obscur: Expedition 33</h2>
+        <div class="review-rating" aria-label="Puntuación: 4 de 5 estrellas">
+          ★★★★☆
+        </div>
+      </header>
+      <p class="review-user"><strong>Usuario:</strong> PixelFan89</p>
+      <p class="review-text">
+        Este juego me atrapó desde el principio. La mezcla de narrativa oscura y exploración espacial es increíble. Solo le bajé una estrella por algunos bugs menores.
+      </p>
+    </article>
+
+    <article class="review-card">
+      <header class="review-header">
+        <h2 class="review-game-title">Schedule 1</h2>
+        <div class="review-rating" aria-label="Puntuación: 5 de 5 estrellas">
+          ★★★★★
+        </div>
+      </header>
+      <p class="review-user"><strong>Usuario:</strong> IndieGamerPro</p>
+      <p class="review-text">
+        Schedule 1 es un juego valiente y único. Su temática no es para todos, pero la jugabilidad y la historia te mantienen pegado. Lo recomiendo si buscas algo diferente.
+      </p>
+    </article>
+
+    <article class="review-card">
+      <header class="review-header">
+        <h2 class="review-game-title">Schedule 1</h2>
+        <div class="review-rating" aria-label="Puntuación: 3 de 5 estrellas">
+          ★★★☆☆
+        </div>
+      </header>
+      <p class="review-user"><strong>Usuario:</strong> RetroNostalgia</p>
+      <p class="review-text">
+        Buen juego con buena música y estética, pero me faltó más variedad en misiones. Aun así, vale la pena probarlo para los fans de Game Pass.
+      </p>
+    </article>
+
+    <article class="review-card">
+      <header class="review-header">
+        <h2 class="review-game-title">Marvel's Spider-Man 2</h2>
+        <div class="review-rating" aria-label="Puntuación: 5 de 5 estrellas">
+          ★★★★★
+        </div>
+      </header>
+      <p class="review-user"><strong>Usuario:</strong> WebSlingerMaster</p>
+      <p class="review-text">
+        Insomniac se supera una vez más. La historia, la acción y los gráficos son espectaculares. Definitivamente, uno de los mejores exclusivos de PS5.
+      </p>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-container">
+    <div class="footer-logo">
+      <a href="index.html" class="logo">
+        <span class="logo-8bit">Info</span><span class="logo-news">Juegos</span>
+      </a>
+      <p>Tu portal de noticias de videojuegos</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-section">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="playstation.html">PlayStation</a></li>
+          <li><a href="xbox.html">Xbox</a></li>
+          <li><a href="nintendo.html">Nintendo</a></li>
+          <li><a href="pc.html">PC</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Secciones</h3>
+        <ul>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Análisis</a></li>
+          <li><a href="#">Guías</a></li>
+          <li><a href="#">Lanzamientos</a></li>
+          <li><a href="#">eSports</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="https://twitter.com/" class="social-icon">Twitter</a>
+          <a href="https://es-es.facebook.com/" class="social-icon">Facebook</a>
+          <a href="https://www.instagram.com/" class="social-icon">Instagram</a>
+          <a href="https://www.youtube.com/" class="social-icon">YouTube</a>
+          <a href="https://discord.com/" class="social-icon">Discord</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <div class="container">
+      <p>&copy; 2025 InfoJuegos. Todos los derechos reservados.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Términos de uso</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js" type="module"></script>
+</body>
+</html>
