@@ -4,20 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSlide = 0;
   let slideInterval;
   
-  // al apretar view more saldran las noticias ocultas
-  const viewMoreBtn = document.querySelector('.view-more-btn');
-  const hiddenNews = document.querySelectorAll('.news-list .news-item.hidden');
 
-  viewMoreBtn.addEventListener('click', (e) => {
-    e.preventDefault(); // evitar comportamiento por defecto del enlace
-
-    hiddenNews.forEach(news => {
-      news.classList.remove('hidden'); // mostramos las noticias ocultas
-    });
-
-    // Opcional: ocultar el botón una vez mostradas las noticias
-    viewMoreBtn.style.display = 'none';
-  });
 
   const showSlide = (index) => {
     slides.forEach((slide, i) => {
@@ -68,12 +55,21 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
 
     // Diccionario de rutas según palabras clave falta hacerlo bien
     const rutas = {
-      "starfield": "/project/html/starfield.html",
-      "spiderman": "/project/noticias/spiderman2.html",
-      "spider-man": "/project/noticias/spiderman2.html",
-      "ghost of tsushima": "/project/noticias/ghost-pc.html",
-      "tsushima": "/project/noticias/ghost-pc.html",
-      "state of play": "/project/noticias/stateofplay.html"
+      "starfield": "starfield.html",
+      "spiderman": "spiderMan2Noticia.html",
+      "spiderman2": "spiderMan2Noticia.html",
+      "spider-man": "spiderMan2Noticia.html",
+      "spider-man2": "spiderMan2Noticia.html",
+      "indie": "10mejoresIndie.html",
+      "indie juegos": "10mejoresIndie.html",
+      "juegos indie": "10mejoresIndie.html",
+      "nosotros": "aboutme.html",
+      "Nosotros": "aboutme.html",
+      "fifa": "fifaNoticia.html",
+      "Fifa": "fifaNoticia.html",
+      "gamepass": "gamePassNoticia.html",
+      "gamepass noticia": "gamePassNoticia.html",
+      "gta 6": "gta5Noticia.html",
     };
 
     if (rutas[query]) {
