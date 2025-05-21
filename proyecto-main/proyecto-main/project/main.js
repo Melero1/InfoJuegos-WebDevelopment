@@ -73,6 +73,13 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
       "expedition": "expedition33.html",
       "movil": "mobile.html",
       "mejores": "10mejoresIndie.html",
+      "nintendo": "nintendo.html",
+      "pc": "pc.html",
+      "ordenadores": "pc.html",
+      "ordenador": "pc.html",
+      "playstation": "playstation.html",
+      "reseñas": "reseñas.html",
+      "mejores": "10mejoresIndie.html",
       
       
       
