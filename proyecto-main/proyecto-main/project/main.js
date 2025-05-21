@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSlide = 0;
   let slideInterval;
   
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 44344fc3ef7825e3180b54a584b75e34dbee35aa
   const showSlide = (index) => {
     slides.forEach((slide, i) => {
       slide.classList.toggle('active', i === index);
@@ -54,11 +59,41 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
     // Diccionario de rutas según palabras clave falta hacerlo bien
     const rutas = {
       "starfield": "starfield.html",
+<<<<<<< HEAD
       "spiderman": "spiderman2.html",
       "spider-man": "spiderman2.html",
       "ghost of tsushima": "ghost-pc.html",
       "tsushima": "ghost-pc.html",
       "state of play": "stateofplay.html"
+=======
+      "spiderman": "spiderMan2Noticia.html",
+      "spiderman2": "spiderMan2Noticia.html",
+      "spider-man": "spiderMan2Noticia.html",
+      "spider-man2": "spiderMan2Noticia.html",
+      "indie": "10mejoresIndie.html",
+      "indie juegos": "10mejoresIndie.html",
+      "juegos indie": "10mejoresIndie.html",
+      "nosotros": "aboutme.html",
+      "Nosotros": "aboutme.html",
+      "fifa": "fifaNoticia.html",
+      "Fifa": "fifaNoticia.html",
+      "gamepass": "gamePassNoticia.html",
+      "gamepass noticia": "gamePassNoticia.html",
+      "gta 6": "gta5Noticia.html",
+      "expedition": "expedition33.html",
+      "movil": "mobile.html",
+      "mejores": "10mejoresIndie.html",
+      "nintendo": "nintendo.html",
+      "pc": "pc.html",
+      "ordenadores": "pc.html",
+      "ordenador": "pc.html",
+      "playstation": "playstation.html",
+      "reseñas": "reseñas.html",
+      "mejores": "10mejoresIndie.html",
+      
+      
+      
+>>>>>>> 44344fc3ef7825e3180b54a584b75e34dbee35aa
     };
 
     if (rutas[query]) {
